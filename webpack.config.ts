@@ -11,7 +11,7 @@ const config: Configuration = {
     rules: [
       {
         test: /.tsx?$/,
-        use: ["ts-loader", path.resolve("./typia-loader.ts")],
+        use: ["swc-loader", path.resolve("./typia-loader.ts")],
         exclude: /node_modules/
       },
       {
